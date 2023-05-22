@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Gerald Senarclens de Grancy">
+  <title>Reveal Template</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/simple.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css"
+        type="text/css">
+  <base target="_blank">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+<section data-background-position="bottom 10% right 10%" data-background-size="30%">
+  <h1>Title</h1>
+  <h2>Subtitle</h2>
+
+  <p id="author">
+    <a href="http://www.senarclens.eu/~gerald/">Gerald Senarclens de Grancy</a>
+  </p>
+  <aside class="notes">
+    <ul>
+      <li>You speaker notes (only you can see them)</li>
+      <li>Rethoric question to the audience...</li>
+    </ul>
+  </aside>
+</section>
+
+
+<section>
+  <h2>Slide Title</h2>
+  <ul>
+    <li>A bullet point</li>
+    <li>One more with a <a href="https://www.w3.org/2013/06/revealjs/"><code>link</code></a></li>
+  </ul>
+</section>
+
+<section>
+  <h3>Slides with Subslides</h3>
+
+  <section>
+    <h3>First Slide (Top Level)</h3>
+    <ol>
+      <li>There are subslides available for this slide</li>
+    </ol>
+  </section>
+
+  <section>
+      <h3>This is a subslide</h3>
+  </section>
+</section>
+
+<section>
+  <h2>Syntax Highlighting</h2>
+<pre>
+<code data-ln-start-from="105"
+      data-line-numbers="1,4,7,11|2,5,8-9"
+      data-trim
+      data-language-c>
+switch (operator_) {
+  case '+':
+    current_ += number;
+    break;
+  case '-':
+    current_ -= number;
+    break;
+  case '=':
+  case 0:
+    current_ = number;
+    break;
+}
+</code>
+</pre>
+<aside class="notes">
+  <ul>
+    <li>A little help when explaining the code</li>
+  </ul>
+</aside>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+## First Markdown Slide
+
+* Markdown is fast
+* Markdown can have [links](https://www.markdownguide.org/basic-syntax/).
+
+---
+## Second Markdown Slide
+
+---
+## Yet Another Markdown Slide
+<p>It is possible to use `html` in Markdown</p>
+
+</textarea>
+</section>
+
+<section data-background-color="pink" class="center">
+    <h1>Questions<br>
+      and feedback...</h1>
+</section>
+
+  </div>
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"
+            type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"
+            type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/search/search.min.js"
+            type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"
+            type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"
+            type="text/javascript"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: false,
+        hash: true,
+        width: 1000,
+        margin: 0,
+        padding: 0,
+        slideNumber: 'c/t',
+        plugins: [ RevealNotes, RevealSearch, RevealHighlight, RevealMarkdown ]
+      });
+    </script>
+  </body>
+</html>
+
+
